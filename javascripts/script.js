@@ -5,17 +5,15 @@ $(document).ready(function(){
             if (number.length > 15) {
                 number = "";
                 totaldiv.text("Err");
-            }
-        } 
-    };
-	var number = "";
+            }}};
+    var number = "";
     var newnumber = "";
     var operator = "";
     var totaldiv = $("#total");
     totaldiv.text("0");
     $("#numbers a").not("#clear,#clearall").click(function(){
-		number += $(this).html();
-		totaldiv.text(number);
-		testNumLength(number);
+        number += $(this).html();
+        totaldiv.text(number);
+        testNumLength(number);
     });
 });
