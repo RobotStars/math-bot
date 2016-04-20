@@ -31,7 +31,7 @@ body, div, a {
 #total{
     height:70px;
     width:300px;
-    margin:0px;
+    margin:auto;
     margin-bottom:5px;
     padding:0 5px;
     background-color:#FFF;
@@ -39,7 +39,7 @@ body, div, a {
     font-size:60px;
 }
 #numbers,#operators {
-    margin:0px;
+    margin:auto;
 }
 
 #numbers a {
@@ -51,4 +51,9 @@ body, div, a {
     text-decoration:none;
     width:50px;
     height:50px;
+    padding: 10px;
+	margin: 5px 15px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+	border-radius: 10px;
 }
