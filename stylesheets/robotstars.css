@@ -13,7 +13,7 @@ body, div, a {
     margin:5px 6px;  
     text-align:center;
     text-decoration:none;
-    color:black;
+    color:purple;
     font-size:39px;
     background:-webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
     background:-moz-linear-gradient(top, #EDEDED, #DCDCDC);
