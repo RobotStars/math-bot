@@ -15,8 +15,8 @@ body, div, a {
     text-decoration:none;
     color:#FFD700;
     font-size:39px;
-    background:-webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
-    background:-moz-linear-gradient(top, #EDEDED, #DCDCDC);
+    background:-webkit-gradient(linear, left top, left bottom, from(#d700ff), to(#d700ff));
+    background:-moz-linear-gradient(top, #d700ff, #d700ff);
     border-radius:10px;
 }
 #calculator {
