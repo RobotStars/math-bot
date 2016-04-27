@@ -54,7 +54,5 @@ body, div, a {
     background-color:#d700ff;
     padding: 10px;
 	margin: 5px 15px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
-	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 	border-radius: 10px;
 }
