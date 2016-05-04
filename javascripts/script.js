@@ -13,33 +13,8 @@ $(document).ready(function(){
 	var operator = "";
 	var totaldiv = $("#total");
 	totaldiv.text("0");
-	$("#numbers > a").not("#clear,#clearall,#pi").click(function(){
-		number += $(this).text();
-		totaldiv.text(number);
-		testNumLength(number);
-	});
-	$("#pi").click(function(){
-		alert("Hey guys! I don't work. You should approximate pi.");
-		pi = "this is going to blow up, you need an approximation of pi";
-		number = pi.toString();
-		newnumber = "";
-		totaldiv.text(number);
-		testNumLength(number);
-	});
-	$("#operators > a").not("#equals").click(function(){
-		operator = $(this).text();
-		newnumber = number;
-		number = "";
-		totaldiv.text("0");
-	});
-	$("#clear,#clearall").click(function(){
-		number = "";
-		totaldiv.text("0");
-		if ($(this).attr("id") === "clearall") {
-			newnumber = "";
-		}
-	});
-	$("#equals").click(function(){
+
+	var equals = function() {
 		var i_1 = Number(newnumber);
 		var i_2 = Number(number);
 		var answer = 0;
@@ -56,5 +31,37 @@ $(document).ready(function(){
 		testNumLength(answer);
 		number = "";
 		newnumber = number;
+		operator = "";
+		return answer;
+	};
+
+	$("#numbers > a").not("#clear,#clearall,#pi").click(function(){
+		number += $(this).text();
+		totaldiv.text(number);
+		testNumLength(number);
+	});
+	$("#operators > a").not("#equals").click(function(){
+		// 1 + 1 +
+		// when our operator value is empty string we save it
+		// when our operator value is NOT empty string we save it AND we equals our previous values 
+		if (operator != "") {
+			newnumber = equals();
+		} else {
+			newnumber = number;
+		}
+		operator = $(this).text();
+		number = "";
+		totaldiv.text("0");
+	});
+	$("#clear,#clearall").click(function(){
+		number = "";
+		totaldiv.text("0");
+		if ($(this).attr("id") === "clearall") {
+			newnumber = "";
+			operator  = "";
+		}
+	});
+	$("#equals").click(function(){
+		equals();
 	});
 });
