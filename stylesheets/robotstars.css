@@ -44,7 +44,7 @@ body, div, a {
 
 #numbers a {
     display:block;
-    float:right;
+    float:left;
     text-align:center;
     color:#FFD700;
     font-size:43px;
