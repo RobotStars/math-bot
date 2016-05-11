@@ -3,6 +3,8 @@ body, div, a {
     margin:0;
     font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
     cursor:pointer;
+    background: #000000;
+    color: gold;
 }
 
 #body {
