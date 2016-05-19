@@ -3,8 +3,8 @@ body, div, a {
     margin:0;
     font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
     cursor:pointer;
-    background: ;
-    color: gold;
+    background: white;
+    color:orange;
    background-image: url("http://img.bleacherreport.net/img/slides/photos/003/796/500/hi-res-6954c568aa49aa0ec926c5d36e669839_crop_north.jpg?w=630&h=420&q=75");
 }
 
