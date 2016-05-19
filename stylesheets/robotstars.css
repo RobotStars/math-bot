@@ -3,7 +3,7 @@ body, div, a {
     margin:0;
     font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
     cursor:pointer;
-    background: #000000;
+    background: ;
     color: gold;
    background-image: url("http://img.bleacherreport.net/img/slides/photos/003/796/500/hi-res-6954c568aa49aa0ec926c5d36e669839_crop_north.jpg?w=630&h=420&q=75");
 }
@@ -51,12 +51,12 @@ body, div, a {
     display:block;
     float:left;
     text-align:center;
-    color:#FFD700;
+    color:#110C09;
     font-size:43px;
     text-decoration:none;
     width:50px;
     height:50px;
-    background-color:#d700ff;
+    background-color:#821B12;
     padding: 10px;
 	margin: 5px 15px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#d700ff), to(#d700ff));
